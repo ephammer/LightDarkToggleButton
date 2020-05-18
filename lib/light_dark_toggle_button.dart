@@ -63,6 +63,12 @@ class _LightDarkToggleButtonState extends State<LightDarkToggleButton> {
         width: _width,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(30),
+          boxShadow:[BoxShadow(
+            offset: Offset(0, -2),
+            blurRadius: 30,
+            color: widget.value?Colors.black.withOpacity(0.16):Colors.white.withOpacity(0.20)
+
+          )] ,
 //          border: Border.all(width: 4),
           gradient: widget.value
               ? LinearGradient(
